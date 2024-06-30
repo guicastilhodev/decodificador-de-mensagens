@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+    .flex-container {
+        display: block;
+    }
+    #text-received{
+        width: 80vw;
+        height: 80vw;
+    }
+    #text-cripto{
+        display: flex;
+        align-items: center;
+
+        width: 95vw;
+        min-height: 40vw;
+        margin-left: 10px;
+        height: 60%;
+        overflow: hidden;
+    }
+    #text-cripto .img-searching{
+        display: none;
+    }
+    p, h2{
+        font-size: 1rem;
+    }
+    textarea::placeholder {
+        font-size: 1.2rem;
+    }
+
+    #form {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 930px) {
+    .img-searching {
+        width: 80%;
+    }
+}
