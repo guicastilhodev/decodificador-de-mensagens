@@ -3,16 +3,16 @@
         display: block;
     }
     #text-received{
-        width: 90vw;
+        width: 80vw;
         height: 80vw;
     }
     #text-cripto{
         display: flex;
         align-items: center;
 
-        width: 95vw;
+        width: 90vw;
         min-height: 40vw;
-        margin-left: 10px;
+        margin-left: 20px;
         height: 80%;
         overflow: hidden;
     }
@@ -27,7 +27,7 @@
     }
 
     #form {
-        width: 135%;
+        width: 130%;
         justify-content: space-between;
     }
 
