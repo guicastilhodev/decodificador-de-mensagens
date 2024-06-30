@@ -3,7 +3,7 @@
         display: block;
     }
     #text-received{
-        width: 80vw;
+        width: 90vw;
         height: 80vw;
     }
     #text-cripto{
@@ -27,7 +27,16 @@
     }
 
     #form {
+        width: 135%;
         justify-content: space-between;
+    }
+
+    #form button{
+        width: 400px;
+    }
+
+    #button_copy {
+        width: 600px;
     }
 
     header h1 {
