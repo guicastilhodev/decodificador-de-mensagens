@@ -1,4 +1,4 @@
-<h1>Decodificador de mensagens</h1>
+<h1>Decodificador de mensagens👨🏻‍💻</h1>
 
 <h2>Sobre</h2>
 <p>Projeto desenvolvido para um challenge do programa Oracle Next Education, uma parceria da Oracle com a alura.</p>
