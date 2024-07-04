@@ -41,17 +41,17 @@ function descriptografarTexto () {
     ocultarTexto();
     let textValue = document.querySelector('textarea').value;
     let novoTeste = textValue.replace(/ai/g, "a");
-    novoTeste = novoTeste.replace(/enter/g, "e")
-    novoTeste = novoTeste.replace(/imes/g, "i")
-    novoTeste = novoTeste.replace(/ober/g, "o")
-    novoTeste = novoTeste.replace(/ufat/g, "u")
+    novoTeste = novoTeste.replace(/enter/g, "e");
+    novoTeste = novoTeste.replace(/imes/g, "i");
+    novoTeste = novoTeste.replace(/ober/g, "o");
+    novoTeste = novoTeste.replace(/ufat/g, "u");
 
     textCripto.innerHTML = novoTeste;
 
 }
 
 function showCopyButton () {
-    copyButton.removeAttribute("hidden")
+    copyButton.removeAttribute("hidden");
 }
 
 
