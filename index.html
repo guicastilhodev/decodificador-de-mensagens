@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
 
-    <!-- FONTS, ICONS AND CSS -->
+    <!-- CSS -->
      <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="footer.css">
      <link rel="stylesheet" href="header.css">
      <link rel="stylesheet" href="responsive.css">
-     <link rel="icon" href="./img/decodificador.png">
 
+     <!-- FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
+    <!-- ICONS -->
     <script src="https://kit.fontawesome.com/c999ec10a5.js" crossorigin="anonymous" defer></script>
+    <link rel="icon" href="./img/decodificador.png">
 
 
 
@@ -35,32 +37,32 @@
         </nav>
     </header>
 
-    <div class="flex-container">
-        <div class="column-container">
+    <main class="flex-container">
+        <section class="column-container">
             <textarea name="text-received" id="text-received" placeholder="Digite seu texto" autofocus></textarea>
             <label for="text-received"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento</label>
             <div id="form">
                 <button class="button_cripto" id="button-cripto" type="submit" onclick="criptografarTexto()">Criptografar</button>
                 <button class="button_descripto" id="button-descripto" type="button" disabled onclick="descriptografarTexto()">Descriptografar</button>   
             </div> 
-        </div>
+        </section>
 
-    <div class="container-cripto">
+    <aside class="container-cripto">
         <div id="text-cripto">
             <p id="p-text"></p>
-            <section id="msg-padrao">
+            <div id="msg-padrao">
                 <img class="img-searching" src="./img/buscando_mensagem.png" alt="Menino com lupa procurando algo">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p >Digite um texto que você deseja criptografar</p>
-            </section>
+            </div>
             <button class="button_copy" id="button_copy" type="submit" onclick="" hidden>Copiar</button>
         </div>
-       
-    </div>
+    </aside>
+    </main>
 
-    </div>
-   
+    
+    <script src="./app.js"></script>
 </body>
-<script src="./app.js"></script>
+
 
 </html>
