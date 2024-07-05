@@ -42,8 +42,8 @@
             <textarea name="text-received" id="text-received" placeholder="Digite seu texto" autofocus></textarea>
             <label for="text-received"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento</label>
             <div id="form">
-                <button class="button_cripto" id="button-cripto" type="submit" onclick="criptografarTexto()">Criptografar</button>
-                <button class="button_descripto" id="button-descripto" type="button" disabled onclick="descriptografarTexto()">Descriptografar</button>   
+                <button  id="button-cripto" type="submit" onclick="criptografarTexto()">Criptografar</button>
+                <button  id="button-descripto" type="button" disabled onclick="descriptografarTexto()">Descriptografar</button>   
             </div> 
         </section>
 
@@ -51,11 +51,11 @@
         <div id="text-cripto">
             <p id="p-text"></p>
             <div id="msg-padrao">
-                <img class="img-searching" src="./img/buscando_mensagem.png" alt="Menino com lupa procurando algo">
+                <img id="img-searching" src="./img/buscando_mensagem.png" alt="Menino com lupa procurando algo">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p >Digite um texto que você deseja criptografar</p>
             </div>
-            <button class="button_copy" id="button_copy" type="submit" onclick="" hidden>Copiar</button>
+            <button id="button_copy" type="submit" onclick="" hidden>Copiar</button>
         </div>
     </aside>
     </main>
