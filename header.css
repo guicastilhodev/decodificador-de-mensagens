@@ -1,5 +1,5 @@
 header {
-    background-color: #0A3871;
+    background-color: var(--secundary-color);
     padding: 25px;
     display: flex;
     align-items: center;

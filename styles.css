@@ -1,6 +1,15 @@
+:root {
+    --primary-color:#E9ECF8;
+    --secundary-color: #0A3871;
+    --tertiary-color: #f6f6f6;
+
+    --primary-font: "Inter", sans-serif;
+}
+
+
 body {
-    background-color: #E9ECF8;
-    font-family: "Inter", sans-serif;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
     box-sizing: border-box;
     width: 100%;
     overflow-y: hidden;
@@ -26,7 +35,7 @@ body {
     height: 50vh;
     padding: 20px;
     font-size: 32px;
-    background-color: #E9ECF8;
+    background-color: var(--primary-color);
 
     border: solid 1px black;
     resize: none;
@@ -49,7 +58,7 @@ body {
 }
 
 #text-cripto {
-    background-color: white;
+    background-color: var(--tertiary-color);
     width: 90%;
     min-height: 75vh;
     max-height: 80vh;
@@ -82,18 +91,18 @@ body {
 }
 
 .form-button:hover {
-    box-shadow: 0px 0px 6px #0A3871;
+    box-shadow: 0px 0px 6px var(--secundary-color);
 }
 
 #button-cripto {
-    background-color: #0A3871;
-    color: white;
+    background-color: var(--secundary-color);
+    color: var(--tertiary-color);
 }
 
 #button-descripto {
-    background-color: white;
-    color:#0A3871 ;
-    border: 1px solid #0A3871;
+    background-color:var(--tertiary-color);
+    color:var(--secundary-color) ;
+    border: 1px solid var(--secundary-color);
 }
 
 #button-descripto:disabled {
@@ -102,9 +111,9 @@ body {
 }
 
 #button_copy {
-    background-color: white;
-    color: #0A3871 ;
-    border: 1px solid #0A3871;
+    background-color: var(--tertiary-color);
+    color: var(--secundary-color) ;
+    border: 1px solid var(--secundary-color);
     position: relative;
     bottom: 10px; 
     left: 50%; 
@@ -120,7 +129,7 @@ body {
 }
 
 textarea::placeholder {
-    color: #0A3871;
+    color: var(--secundary-color);
 }
 
 #p-text {
