@@ -12,14 +12,7 @@
      <link rel="stylesheet" href="header.css">
      <link rel="stylesheet" href="responsive.css">
 
-     <!-- FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-
-
-    <!-- ICONS -->
+     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/c999ec10a5.js" crossorigin="anonymous" defer></script>
     <link rel="icon" href="./img/decodificador.png">
 
@@ -28,7 +21,7 @@
 </head>
 <body>
     <header>
-        <h1>Decodificador de Texto</h1>
+        <h1 class="header-text">Decodificador de Texto</h1>
         <nav>
             <a href="https://www.linkedin.com/in/guicastilhodev" target="_blank  ">
                 <i class="fa-brands fa-linkedin" ></i>
@@ -42,7 +35,7 @@
     <main class="flex-container">
         <section class="column-container">
             <textarea name="text-received" id="text-received" placeholder="Digite seu texto" autofocus></textarea>
-            <label for="text-received"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento</label>
+            <label for="text-received"><i class="fa-solid fa-circle-exclamation"></i>  Apenas letras minúsculas e sem acento</label>
             <div id="form">
                 <button class="form-button" id="button-cripto" type="submit" onclick="criptografarTexto()">Criptografar</button>
                 <button class="form-button" id="button-descripto" type="button" disabled onclick="descriptografarTexto()">Descriptografar</button>   
@@ -53,7 +46,7 @@
             <div id="text-cripto">
                 <p id="p-text"></p>
                 <div id="msg-padrao">
-                    <img id="img-searching" src="./img/buscando_mensagem.png" alt="Menino com lupa procurando algo">
+                    <img class="git-waiting" src="./img/sonic-waiting.gif" alt="Caveira esperando">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p >Digite um texto que você deseja criptografar</p>
                 </div>

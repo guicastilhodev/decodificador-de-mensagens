@@ -68,5 +68,5 @@ async function clipboardCopy () {
     let text = textCripto.innerText;
     await navigator.clipboard.writeText(text);
     document.getElementById('p-text').innerHTML = "";
-}
+};
 

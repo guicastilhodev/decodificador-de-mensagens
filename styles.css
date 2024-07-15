@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 :root {
-    --primary-color:#E9ECF8;
-    --secundary-color: #0A3871;
-    --tertiary-color: #f6f6f6;
+    --primary-color:#bfdbf7;
+    --secundary-color: #3061e3;
+    --tertiary-color: #E9ECF8;
+    --quartiary-color: #000000;
 
-    --primary-font: "Inter", sans-serif;
+    --primary-font: "VT323", sans-serif;
+    --secundary-font: Helvetica, sans-serif;
 }
 
 
 body {
-    background-color: var(--primary-color);
-    font-family: var(--primary-font);
+    background-color: var(--tertiary-color);
     box-sizing: border-box;
     width: 100%;
-    overflow-y: hidden;
+    height: 100vh;
+    font-weight: 400;
 }
 
 .flex-container {
@@ -20,12 +23,13 @@ body {
     align-items: self-start;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .column-container{
     display: flex;
     flex-direction: column;
+    height: auto;
     width: 70%;
     margin: 4% 2%;
 }
@@ -34,10 +38,10 @@ body {
     width: 90%;
     height: 50vh;
     padding: 20px;
-    font-size: 32px;
-    background-color: var(--primary-color);
+    font-size: 40px;
+    font-family: var(--primary-font);
+    background-color: var(--tertiary-color);
 
-    border: solid 1px black;
     resize: none;
 }
 
@@ -45,20 +49,22 @@ body {
     margin-left: 0,5%;
     gap: 2rem;
     margin-top: 20px;
+    font-size: 20px;
+    font-family: var(--secundary-font);
 
     display: flex;
 }
 
 .container-cripto {
     width: 30%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin: 2%;
 }
 
 #text-cripto {
-    background-color: var(--tertiary-color);
+    background-color: white;
     width: 90%;
     min-height: 75vh;
     max-height: 80vh;
@@ -70,6 +76,8 @@ body {
     overflow-x: hidden;
     word-wrap: break-word;
     word-break: break-word;
+
+    /* border: solid 1px var(--quartiary-color); */
 }
 
 #text-cripto p, h2 {
@@ -111,7 +119,7 @@ body {
 }
 
 #button_copy {
-    background-color: var(--tertiary-color);
+    background-color: white;
     color: var(--secundary-color) ;
     border: 1px solid var(--secundary-color);
     position: relative;
@@ -120,30 +128,38 @@ body {
     transform: translateX(-50%);
     justify-self: flex-end;
     min-height: 60px;
+    font-family: var(--secundary-font);
 }
 
-#img-searching {
-    padding: 40px;
+.git-waiting {
+    padding: 20px;
     width: auto;
-    height: 50%;
+    height: 300px;
 }
 
 textarea::placeholder {
-    color: var(--secundary-color);
+    color: var(--quartiary-color);
+    font-size: 40px;
 }
 
 #p-text {
     color: #495057;
-    font-size: 32px;
+    font-size: 40px;
+    font-family: var(--primary-font);
     
 }
 
 #msg-padrao {
     width: 100%;
     text-align: center;
+    padding-bottom: 60px;
+    font-size: 18px;
+    font-family: var(--secundary-font);
 }
 
 label {
     margin-top: 2%;
     color: #495057;
+    font-size: 16px;
+    font-family: var(--secundary-font);
 }
