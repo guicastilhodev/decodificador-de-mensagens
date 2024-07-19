@@ -1,22 +1,24 @@
 const textCripto = document.getElementById("p-text");
 const buttonDescripto = document.getElementById("button-descripto");
 const copyButton = document.getElementById("button_copy");
+const textArea = document.querySelector('textarea');
 
 document.addEventListener("keypress", (e) => {
     if(e.key==="Enter") {
         criptografarTexto();
+        ocultarTexto();
     }
 });
 
 function criptografarTexto () {
 
-    let textValue = document.querySelector('textarea').value;
+    let textValue = textArea.value;
     let textArray = textValue.split("");
 
     if (textValue != "") {
-        ocultarTexto();
         showCopyButton();
         buttonDescripto.removeAttribute("disabled");
+        ocultarTexto();
     }
     
     for (i=0; i < textArray.length; i++) {
@@ -35,7 +37,7 @@ function criptografarTexto () {
 
     textCripto.innerHTML = (textArray.join(""));
     
-}
+};
 
 function descriptografarTexto () {
     ocultarTexto();
@@ -48,16 +50,15 @@ function descriptografarTexto () {
 
     textCripto.innerHTML = novoTeste;
 
-}
+};
 
 function showCopyButton () {
     copyButton.removeAttribute("hidden");
-}
-
+};
 
 function ocultarTexto() {
-    document.getElementById('msg-padrao').style.display = "none";
-}
+    document.getElementById('msg-default').setAttribute("hidden", true);
+};
 
 
 copyButton.addEventListener('click', clipboardCopy);
@@ -68,5 +69,7 @@ async function clipboardCopy () {
     let text = textCripto.innerText;
     await navigator.clipboard.writeText(text);
     document.getElementById('p-text').innerHTML = "";
+    document.getElementById("msg-default").removeAttribute("hidden");
+    copyButton.setAttribute("hidden", true);
 };
 

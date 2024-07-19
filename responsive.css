@@ -1,56 +1,64 @@
 @media screen and (max-width: 768px) {
-    .flex-container {
+
+     header .header-text {
+        font-size: 28px;
+    }
+
+    .main-content {
         display: block;
     }
-    #text-received{
-        width: 80vw;
-        height: 80vw;
-    }
-    #text-cripto{
-        display: flex;
-        align-items: center;
 
-        width: 90vw;
-        min-height: 40vw;
-        margin-left: 20px;
-        height: 80%;
-        overflow: hidden;
+    .main-text-received {
+        width: 100%;
+        margin: 4% 2%;
     }
-    #text-cripto .img-searching{
-        display: none;
+
+    .form-button {
+        width: 45%;
     }
-    p, h2{
-        font-size: 1rem;
+
+    .main-text-cripto {
+        width: 100%;
+        margin: 2% 4%;
+
     }
-    textarea::placeholder {
-        font-size: 1.2rem;
+
+    #text-cripto {
+        margin: 2% 2%;
+    }
+}
+
+
+@media screen and (max-width: 435px){
+
+
+    .main-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-text-received {
+        width: 95%;
+    }
+
+    .main-content-label {
+        font-size: 0.8rem;
     }
 
     #form {
-        width: 130%;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
-    #form button{
-        width: 400px;
+    .form-button {
+        width: 95%;
     }
 
-    #button_copy {
-        width: 600px;
+    .gif-waiting {
+        height: 200px;
     }
 
-    header h1 {
-        font-size: 1.3rem;
-    }
 
-    footer p {
-        font-size: 1rem;
-    }
-   
-}
-
-@media screen and (max-width: 930px) {
-    .img-searching {
-        width: 80%;
-    }
 }

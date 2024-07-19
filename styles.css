@@ -18,15 +18,15 @@ body {
     font-weight: 400;
 }
 
-.flex-container {
+.main-content {
     display: flex;  
     align-items: self-start;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 80vh;
 }
 
-.column-container{
+.main-text-received{
     display: flex;
     flex-direction: column;
     height: auto;
@@ -38,63 +38,42 @@ body {
     width: 90%;
     height: 50vh;
     padding: 20px;
-    font-size: 40px;
+    font-size: 2.25rem;
     font-family: var(--primary-font);
     background-color: var(--tertiary-color);
 
     resize: none;
 }
 
+#text-received::placeholder {
+    color: var(--quartiary-color);
+    font-size: 2.25rem;
+}
+
+.main-content-label {
+    margin-top: 2%;
+    color: #495057;
+    font-size: 1rem;
+    font-family: var(--secundary-font);
+}
+
 #form {
     margin-left: 0,5%;
     gap: 2rem;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.15rem;
     font-family: var(--secundary-font);
 
     display: flex;
 }
 
-.container-cripto {
-    width: 30%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
-}
-
-#text-cripto {
-    background-color: white;
-    width: 90%;
-    min-height: 75vh;
-    max-height: 80vh;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-x: hidden;
-    word-wrap: break-word;
-    word-break: break-word;
-
-    /* border: solid 1px var(--quartiary-color); */
-}
-
-#text-cripto p, h2 {
-    padding: 10px 20px 10px 20px;
-}
-
-#text-cripto h2 {
-    font-weight: bold;
-}
-
 .form-button {
-    width: 300px;
+    width: 40%;
     height: 60px;
     margin-bottom: 2%;
     cursor: pointer;
     
-    border-radius: 15px;
+    border-radius: 20px;
     transition: 0.2s ease-in-out;
 }
 
@@ -118,6 +97,57 @@ body {
     cursor: not-allowed; 
 }
 
+.main-text-cripto {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#text-cripto {
+    background-color: white;
+    width: 90%;
+    min-height: 75vh;
+    max-height: 80vh;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+#text-cripto p, h2 {
+    padding: 10px 20px 10px 20px;
+}
+
+#text-cripto h2 {
+    font-weight: bold;
+}
+
+#p-text {
+    color: #495057;
+    font-size: 2.25rem;
+    font-family: var(--primary-font);
+}
+
+#msg-default{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 1.15rem;
+    font-family: var(--secundary-font);
+}
+
+.gif-waiting {
+    padding: 20px;
+    width: auto;
+    height: 300px;
+}
+
 #button_copy {
     background-color: white;
     color: var(--secundary-color) ;
@@ -127,39 +157,6 @@ body {
     left: 50%; 
     transform: translateX(-50%);
     justify-self: flex-end;
-    min-height: 60px;
-    font-family: var(--secundary-font);
-}
-
-.git-waiting {
-    padding: 20px;
-    width: auto;
-    height: 300px;
-}
-
-textarea::placeholder {
-    color: var(--quartiary-color);
-    font-size: 40px;
-}
-
-#p-text {
-    color: #495057;
-    font-size: 40px;
-    font-family: var(--primary-font);
-    
-}
-
-#msg-padrao {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 60px;
-    font-size: 18px;
-    font-family: var(--secundary-font);
-}
-
-label {
-    margin-top: 2%;
-    color: #495057;
-    font-size: 16px;
+    width: 80%;
     font-family: var(--secundary-font);
 }

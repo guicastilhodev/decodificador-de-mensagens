@@ -7,14 +7,14 @@ header {
 }
 
 header .header-text {
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--tertiary-color);
-    font-family: "VT323";    
+    font-family: var(--secundary-font);    
 }
 
 header a {
-    font-size: 2em;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
     transition: 0.2s ease-in-out;

@@ -32,29 +32,28 @@
         </nav>
     </header>
 
-    <main class="flex-container">
-        <section class="column-container">
+    <main class="main-content">
+        <section class="main-text-received">
             <textarea name="text-received" id="text-received" placeholder="Digite seu texto" autofocus></textarea>
-            <label for="text-received"><i class="fa-solid fa-circle-exclamation"></i>  Apenas letras minúsculas e sem acento</label>
+            <label class="main-content-label" for="text-received"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento</label>
             <div id="form">
                 <button class="form-button" id="button-cripto" type="submit" onclick="criptografarTexto()">Criptografar</button>
                 <button class="form-button" id="button-descripto" type="button" disabled onclick="descriptografarTexto()">Descriptografar</button>   
             </div> 
         </section>
 
-        <aside class="container-cripto">
+        <aside class="main-text-cripto">
             <div id="text-cripto">
                 <p id="p-text"></p>
-                <div id="msg-padrao">
-                    <img class="git-waiting" src="./img/sonic-waiting.gif" alt="Caveira esperando">
+                <div id="msg-default">
+                    <img class="gif-waiting" src="./img/sonic-waiting.gif" alt="Sonic esperando">
                     <h2>Nenhuma mensagem encontrada</h2>
-                    <p >Digite um texto que você deseja criptografar</p>
+                    <p>Digite um texto que você deseja criptografar</p>
                 </div>
                 <button class="form-button" id="button_copy" type="submit" onclick="" hidden>Copiar</button>
             </div>
         </aside>
-    </main>
-    
+    </main>    
     <script src="./app.js"></script>
 </body>
 
