@@ -1,7 +1,11 @@
 @media screen and (max-width: 768px) {
 
+    header {
+        width: 100%;
+    }
+
      header .header-text {
-        font-size: 28px;
+        font-size: 1.8rem;
     }
 
     .main-content {
@@ -10,7 +14,7 @@
 
     .main-text-received {
         width: 100%;
-        margin: 4% 2%;
+        margin: 4% 1%;
     }
 
     .form-button {
@@ -30,7 +34,6 @@
 
 
 @media screen and (max-width: 435px){
-
 
     .main-content {
         width: 100%;
@@ -53,7 +56,7 @@
     }
 
     .form-button {
-        width: 95%;
+        width: 100%;
     }
 
     .gif-waiting {
