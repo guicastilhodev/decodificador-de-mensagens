@@ -14,7 +14,7 @@
 
     .main-text-received {
         width: 100%;
-        margin: 4% 1%;
+        margin: 5%;
     }
 
     .form-button {
@@ -23,12 +23,12 @@
 
     .main-text-cripto {
         width: 100%;
-        margin: 2% 4%;
+        margin: 5%;
 
     }
 
     #text-cripto {
-        margin: 2% 2%;
+        margin: 4%;
     }
 }
 
@@ -42,7 +42,7 @@
     }
 
     .main-text-received {
-        width: 95%;
+        width: 100%;
     }
 
     .main-content-label {
