@@ -1,7 +1,7 @@
 <h1>Decodificador de mensagens👨🏻‍💻</h1>
 
 <h2>Sobre</h2>
-<p>Projeto desenvolvido para um challenge do programa Oracle Next Education, uma parceria da Oracle com a alura.</p>
+<p>Projeto desenvolvido para um challenge do programa Oracle Next Education, uma parceria da Oracle com Alura.</p>
 <p>O decodificador utiliza uma lógica de substituição de vogais para codificar as mensagens e decodificar.</p>
 
 ## 🚀 Tecnologias
